@@ -66,8 +66,9 @@ def main():
   setup_logging()
   
   # Generate a timestamped filename for the QR code
-  timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
-  qr_filename = f"QRCode_{timestamp}.png"
+  timestamp = datetime.now().strftime('%Y%m%d%H%M')
+  sanitized_url = args.url.split("//", 1)[-1].replace("/", "_")
+  qr_filename = f"QRCode_{sanitized_url}_{timestamp}.png"
 
   # Create the full path for the QR code file
   qr_code_full_path = Path.cwd() / QR_DIRECTORY / qr_filename
