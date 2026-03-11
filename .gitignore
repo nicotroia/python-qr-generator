@@ -1,0 +1,20 @@
+venv
+images
+.python_history
+__pycache__/
+*.py[cod]
+*$py.class
+qr_codes/
+
+# Distribution / packaging
+.Python
+build/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

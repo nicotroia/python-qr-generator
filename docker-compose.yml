@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  qr_code_app:
+    image: qr_code_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./qr_codes:/app/qr_codes # Maps the local 'qr_codes' directory to '/app/qr_codes' in the container
+    command: --url http://www.nicotroia.com # Vars for 'main.py'
