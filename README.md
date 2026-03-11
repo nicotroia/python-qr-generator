@@ -18,16 +18,17 @@ pip install -r requirements.txt
 python main.py --url <my_site.com>
 ```
 
-# (Optional) Configuration
+## (Optional) Configuration
 
 ```bash
 cp .env.sample .env
 vi .env
 ```
 
-# 🐳 (Optional) Docker Setup
+Hex codes are supported ie.
+FILL_COLOR="#f02973"
 
-## Build Docker Image
+## (Optional) Docker Setup 🐳
 
 ```bash
 docker build -t qr_code_app .

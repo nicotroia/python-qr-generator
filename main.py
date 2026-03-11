@@ -66,7 +66,7 @@ def main():
   setup_logging()
   
   # Generate a timestamped filename for the QR code
-  timestamp = datetime.now().strftime('%Y%m%d%H%M')
+  timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
   sanitized_url = args.url.split("//", 1)[-1].replace("/", "_")
   qr_filename = f"QRCode_{sanitized_url}_{timestamp}.png"
 
