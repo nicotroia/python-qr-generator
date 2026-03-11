@@ -26,7 +26,7 @@ vi .env
 ```
 
 Hex codes are supported ie.
-FILL_COLOR="#f02973"
+FILL_COLOR=#f02973
 
 ## (Optional) Docker Setup 🐳
 
